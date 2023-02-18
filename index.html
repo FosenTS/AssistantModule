@@ -9,24 +9,28 @@
   </head>
   <body>
     <section>
+      <div class = "logotip">
         <img src="src/picture/logo.png">
-        <div class = "Workspace">
-          <button id = "listen-button" onclick="listen()"><img src = "src/picture/clarity_microphone-solid.png"></button>
-          <br>
-          <div class = "inputBox">
-            <input id = "LabelText" type = "text"> <span>Введите комманду</span> <button id = "inputHand" onclick = "handInput()">></button>
-          </div>
-        </div>
-        <br>
-        <div class = "BoxText">
-          <div class = "inputLabel">
-            <span>Ваш запрос</span>
-            <p id = "input-area"> </p>
+      </div>
+        <div class = "MainWork">
+          <div class = "Workspace">
+            <button id = "listen-button" onclick="listen()"><img src = "src/picture/microphone_ico.png"></button>
+            <br>
+            <div class = "inputBox">
+              <input id = "LabelText" type = "text"> <span>Введите комманду</span> <button id = "inputHand" onclick = "handInput()">></button>
+            </div>
           </div>
           <br>
-          <div class = "outputLabel">
-            <span> Ответ ассистента</span>
-            <p id = "output-area"> </p>
+          <div class = "BoxText">
+            <div class = "inputLabel">
+              <span>Ваш запрос</span>
+              <p id = "input-area"> </p>
+            </div>
+            <br>
+            <div class = "outputLabel">
+              <span> Ответ ассистента</span>
+              <p id = "output-area"> </p>
+            </div>
           </div>
         </div>
     </section>

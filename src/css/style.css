@@ -26,13 +26,31 @@ section {
   border-radius: 7px;
   position: absolute;
   height: 800px;
-  top: 50px;
+  top:50px;
 }
 
+.logotip {
+  transform:  translateY(-65px);
+}
+
+.MainWork {
+  transform: translateY(-110px);
+}
 .Workspace {
   display: flex;
   align-items: center;
   flex-direction: column; 
+}
+
+
+.Workspace button {
+    background-color: rgba(79, 28, 149, 1);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
 }
 
 .BoxText {
@@ -44,8 +62,8 @@ section {
 .inputBox input {
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 7px;
-  width: 350px;
-  padding: 20px;
+  width: 335px;
+  padding: 30px;
   background: rgba(79, 28, 149, 1);
   outline: none;
   
@@ -55,7 +73,7 @@ section {
   background: rgba(79, 28, 149, 1);
   border: 2px solid rgba(255,255,255,0.25);
   border-radius: 7px;
-  padding: 20px;
+  padding: 30px;
   width: 30px;
 }
 
@@ -78,7 +96,7 @@ section {
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 7px;
   width: 400px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .inputLabel span{
@@ -88,7 +106,7 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
   color: black;
-  transform: translateX(10px) translateY(-30px);
+  transform: translateX(10px) translateY(-50px);
   font-size: 0.65em;
   padding:0 10px;
   background: rgba(79, 28, 149, 1);
@@ -101,7 +119,7 @@ section {
   border-radius: 7px;
   width: 600px;
   top: 100px;
-  padding: 60px;
+  padding: 80px;
 }
 
 .outputLabel span {
@@ -111,12 +129,10 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
   color: black;
-  transform: translateX(-40px) translateY(-70px);
+  transform: translateX(-40px) translateY(-90px);
   font-size: 0.65em;
   padding: 0 10px;
   background: rgba(79, 28, 149, 1);
   border-left: 2px solid rgba(255, 255, 255, 0.25);
   border-right: 2px solid rgba(255, 255, 255, 0.25);
 }
-
-

@@ -15,7 +15,7 @@ function listen() {
 		  outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 	  }
-    else if (transcript.includes("обратная связь по гранту") || transcript.includes("обратная связь по Гранту")){
+    else if (transcript.includes("обратная связь по гранту" || transcript.includes("обратная связь по Гранту"))){
       let text = "Добрый день, для запроса обратной связи необходимо зайти в информацию о заявке, путем нажатия на <<ЗАЯВКА НА ГРАНТОВЫЙ КОНКУРС ПОДАНА>> в разделе мои заявки. С Уважением, Техническая поддержка АИС Молодежь России"
       outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
