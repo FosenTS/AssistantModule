@@ -21,16 +21,17 @@ body {
 }
 
 section {
-  background:rgba(79, 28, 149, 1);
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  background:rgb(216, 215, 215, 1);
+  border: 2px solid #faa419;
   border-radius: 7px;
   position: absolute;
   height: auto;
   top:50px;
+  width: 700px;
 }
 
 .logotip {
-  transform:  translateY(-65px);
+  transform:  translateY(20px);
 }
 
 .MainWork {
@@ -44,13 +45,17 @@ section {
 
 
 .Workspace button {
-    background-color: rgba(79, 28, 149, 1);
+    background-color: rgb(216, 215, 215, 1);
     border: none;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+}
+
+.buttonVoice button {
+  transform: translateX(240px) translateY(94px);
 }
 
 .BoxText {
@@ -60,20 +65,20 @@ section {
 }
 
 .inputBox input {
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid #faa419;
   border-radius: 7px;
   width: 335px;
   padding: 30px;
-  background: rgba(79, 28, 149, 1);
+  background: rgb(216, 215, 215, 1);
   outline: none;
   
 }
 
 .inputBox button {
-  background: rgba(79, 28, 149, 1);
-  border: 2px solid rgba(255,255,255,0.25);
+  background: rgb(216, 215, 215, 1);
+  border: 2px solid #faa419;
   border-radius: 7px;
-  padding: 30px;
+  padding: 29px;
   width: 30px;
 }
 
@@ -84,16 +89,16 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
   color: black;
-  transform: translateX(10px) translateY(-7px);
+  transform: translateX(30px) translateY(-1px);
   font-size: 0.65em;
   padding: 0 10px;
-  background: rgba(79, 28, 149, 1);
-  border-left: 2px solid rgba(255, 255, 255, 0.25);
-  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgb(216, 215, 215, 1);
+  border-left: 2px solid #faa419;
+  border-right: 2px solid #faa419;
 }
 
 .inputLabel {
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid #faa419;
   border-radius: 7px;
   width: 400px;
   padding: 40px;
@@ -106,16 +111,16 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
   color: black;
-  transform: translateX(10px) translateY(-50px);
+  transform: translateX(30px) translateY(-50px);
   font-size: 0.65em;
   padding:0 10px;
-  background: rgba(79, 28, 149, 1);
-  border-left: 2px solid rgba(255, 255, 255, 0.25);
-  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgb(216, 215, 215, 1);
+  border-left: 2px solid #faa419;
+  border-right: 2px solid #faa419;
 }
 
 .outputLabel {
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid #faa419;
   border-radius: 7px;
   width: 600px;
   top: 100px;
@@ -129,10 +134,15 @@ section {
   text-transform: uppercase;
   transition: 0.5s;
   color: black;
-  transform: translateX(-40px) translateY(-90px);
+  transform: translateX(-30px) translateY(-90px);
   font-size: 0.65em;
   padding: 0 10px;
-  background: rgba(79, 28, 149, 1);
-  border-left: 2px solid rgba(255, 255, 255, 0.25);
-  border-right: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgb(216, 215, 215, 1);
+  border-left: 2px solid #faa419;
+  border-right: 2px solid #faa419;
+}
+
+.logotip_group {
+  position: absolute;
+  transform: translateX(-10px) translateY(550px);
 }
