@@ -141,8 +141,3 @@ section {
   border-left: 2px solid #faa419;
   border-right: 2px solid #faa419;
 }
-
-.logotip_group {
-  position: absolute;
-  transform: translateX(-10px) translateY(550px);
-}
