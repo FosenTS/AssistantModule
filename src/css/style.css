@@ -14,25 +14,52 @@
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
   background: rgba(79, 28, 149, 1);
 }
 
-.inputBox {
-  position: relative;
-  width: 250px;
+section {
+  background:rgba(79, 28, 149, 1);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  position: absolute;
+  height: 800px;
+  top: 50px;
+}
+
+.Workspace {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.BoxText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .inputBox input {
-  width: 100%;
-  padding: 10px;
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 7px;
-  background:  rgba(79, 28, 149, 1);
-  outline: none;
-  color: #fff;
+  width: 400px;
+  padding: 20px;
+  background: rgba(79, 28, 149, 1);
 }
 
+.inputLabel {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  width: 400px;
+  padding: 20px;
+}
+
+.outputLabel {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  width: 600px;
+  top: 100px;
+  padding: 40px;
+}

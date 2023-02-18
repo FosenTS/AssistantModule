@@ -10,19 +10,22 @@
   <body>
     <section>
         <img src="src/picture/logo.png">
-        <h1>Голосовой ассистент</h1>
-        <h2>by SigmaDevs</h2>
-        <form>
-        <div class = "inputBox">
-          <input id = "LabelText" type = "text">
+        <div class = "Workspace">
+          <button id = "listen-button" onclick="listen()"><i class = "fa fa-microphone"></i></button>
+          <br>
+          <div class = "inputBox">
+            <input id = "LabelText" type = "text">
+          </div>
         </div>
-        <button id = "listen-button" onclick="listen()"><i class = "fa fa-microphone"></i></button>
-        </form>
+        <br>
         <div class = "BoxText">
+          <div class = "inputLabel">
             <p id = "input-area">Ваш запрос</p>
-        </div>
-        <div class = BoxText">
+          </div>
+          <br>
+          <div class = "outputLabel">
             <p id = "output-area">Ответ ассистента</p>
+          </div>
         </div>
     </section>
     <script src="script.js"></script>
