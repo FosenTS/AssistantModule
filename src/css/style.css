@@ -44,9 +44,34 @@ section {
 .inputBox input {
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 7px;
-  width: 400px;
+  width: 350px;
   padding: 20px;
   background: rgba(79, 28, 149, 1);
+  outline: none;
+  
+}
+
+.inputBox button {
+  background: rgba(79, 28, 149, 1);
+  border: 2px solid rgba(255,255,255,0.25);
+  border-radius: 7px;
+  padding: 20px;
+  width: 30px;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 130px;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: black;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: rgba(79, 28, 149, 1);
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .inputLabel {
@@ -56,10 +81,42 @@ section {
   padding: 20px;
 }
 
+.inputLabel span{
+  position: absolute;
+  left: 130px;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: black;
+  transform: translateX(10px) translateY(-30px);
+  font-size: 0.65em;
+  padding:0 10px;
+  background: rgba(79, 28, 149, 1);
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
+}
+
 .outputLabel {
   border: 2px solid rgba(255, 255, 255, 0.25);
   border-radius: 7px;
   width: 600px;
   top: 100px;
-  padding: 40px;
+  padding: 60px;
 }
+
+.outputLabel span {
+  position: absolute;
+  left: 90px;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: black;
+  transform: translateX(-40px) translateY(-70px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: rgba(79, 28, 149, 1);
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+
