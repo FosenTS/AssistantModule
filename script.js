@@ -14,10 +14,83 @@ function listen() {
       let text = "Привет, пользователь!";
 		  outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+	  } 
+    // 1й вопрос
+    else if (transcript.includes("обратная связь по гранту" || transcript.includes("обратная связь по Гранту") || transcript.includes("обратная связь") || transcript.includes("Обратная связь"))) {
+      let text = "Добрый день, для запроса обратной связи необходимо зайти в информацию о заявке путем нажатия на (ЗАЯВКА НА ГРАНТОВЫЙ КОНКУРС ПОДАНА) в разделе мои заявки. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
 	  }
-    else if (transcript.includes("обратная связь по гранту" || transcript.includes("обратная связь по Гранту"))){
-      let text = "Добрый день, для запроса обратной связи необходимо зайти в информацию о заявке, путем нажатия на <<ЗАЯВКА НА ГРАНТОВЫЙ КОНКУРС ПОДАНА>> в разделе мои заявки. С Уважением, Техническая поддержка АИС Молодежь России"
-      outputArea.innerHTML = text;
+    // 2й вопрос
+    else if (transcript.includes("Обновить данные профиля ГАИС") || transcript.includes("обновить данные профиля гаис") || transcript.includes("обновить данные профиля") || transcript.includes("обновить профиль")) {
+      let text = "Добрый день, перейдите на главную страницу системы и нажмите кнопку (обновить), которая расположена рядом с аватаром вашего аккаунта, проблема должна исчезнуть. С Уважением, техническая поддержка АИС (Молодежь России)"
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 3й вопрос
+    else if (transcript.includes("перезайти ЕСИА") || transcript.includes("перезайти есиа") || transcript.includes("перезайти в ЕСИА") || transcript.includes("перезайти в есиа")) {
+      let text = "Добрый день, после прохождения верификации, вам необходимо перезайти в аккаунт АИС, чтобы данные синхронизировались. Либо, выйти из аккаунта АИС и войти в систему используя кнопку (Войти через ГосУслуги), только убедитесь что в ГосУслугах осуществлён вход именно в ваш аккаунт. С Уважением, техническая поддержка АИС (Молодежь России)"
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+     // 4й вопрос
+     else if (transcript.includes("не сохраняются изменения в профиле") || transcript.includes("не сохраняются изменения") || transcript.includes("не изменяется профиль") || transcript.includes("почему не сохраняются изменения в профиле?")) {
+      let text = "Добрый день, во время сохранения изменений обратите внимание на поля и вкладки подсвеченные красным цветом. Для успешного сохранения изменений профиля, необходимо полностью заполнить профиль. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 5й вопрос
+    else if (transcript.includes("во время подачи заявки на грант не высвечивается созданный проект") || transcript.includes("во время подачи заявки на Грант не высвечивается созданный проект") || transcript.includes("не высвечивается созданный проект") || transcript.includes("при подачи заявки на грант не высвечивается созданный проект")) {
+      let text = "Добрый день, дело в том, что при создании данного проекта Вы использовали не подходящий шаблон для данного мероприятия. Узнать какой шаблон необходим Вы можете в правой части на странице мероприятия. Увидеть шаблон созданного проекта можно в строке под названием проекта. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 6й вопрос
+    else if (transcript.includes("ошибка 404") || transcript.includes("404")) {
+      let text = "Добрый день, ошибка 404 означает что у Вашего аккаунта нет доступа к данной странице. Это может быть из-за не подходящего возраста, региона проживания, или не выбранных направлений деятельности. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+     // 7й вопрос
+     else if (transcript.includes("аккаунт верифицирован, галочки в профиле нет") || transcript.includes("аккаунт верифицирован галочки в профиле нет") || transcript.includes("нет галочки в профиле") || transcript.includes("не появлется галочка верификации")) {
+      let text = "Добрый день, вам необходимо подтвердить свой аккаунт на сайте Госуслуг , после чего перезайти в профиль на старом модуле АИС, проверить наличие галочки возле Ваших инициалов, затем перезайти в аккаунт ГАИС. Инструкцию как подтвердить аккаунт в ЕСИА можно найти здесь https://www.gosuslugi.ru/help/faq/c-1. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+     // 8й вопрос
+     else if (transcript.includes("для чего нужны баллы") || transcript.includes("зачем нужны баллы") || transcript.includes("для чего нужны баллы?") || transcript.includes("зачем нужны баллы?")) {
+      let text = "Добрый день, баллы - показатель активности пользователя в системе. Ни для чего более они не нужны и не могут быть использованы. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 9й вопрос
+    else if (transcript.includes("отвязать ЕСИА") || transcript.includes("отвязать есиа") || transcript.includes("отвязка ЕСИА") || transcript.includes("отвязка есиа")) {
+      let text = "Добрый день, чтобы отменить верификацию аккаунта: Для этого перейдите в меню (настройки) в АИС myrosmol.ru/settings и нажмите отменить привязку ЕСИА, Либо перейдите в настройки аккаунта Госуслуг по ссылке lk.gosuslugi.ru/settings/system-permissions и отмените привязку АИС. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 10й вопрос
+    else if (transcript.includes("как узнать id профиля") || transcript.includes("где посмотреть id профиля") || transcript.includes("мой id")) {
+      let text = "Добрый день, ID Своего профиля Вы можете узнать в меню (редактирования профиля) под Вашим аватаром https://myrosmol.ru/profile. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 11й вопрос
+    else if (transcript.includes("создать кабинет НКО") || transcript.includes("создать кабинет нко")) {
+      let text = "Добрый день,подробную инструкцию для регистрации кабинета НКО Вы можете найти в методических рекомендациях для НКО, которые расположены по ссылке https://grants.myrosmol.ru/recomendations. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 12й вопрос
+    else if (transcript.includes("регистрация мероприятия на АИС") || transcript.includes("регистрация мероприятия на аис") || transcript.includes("регистрация мероприятия")) {
+      let text = "Добрый день, чтобы завести мероприятие выше регионального нужно написать официальное письмо на почту Op@fadm.gov.ru , все остальные мероприятия через органы исполнительной власти, реализующим государственную молодежную политику на территории субъекта. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
+      speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+    // 13й вопрос
+    else if (transcript.includes("чтобы поменять почту к которой привязан аккаунт") || transcript.includes("поменять почту") || transcript.includes("сменить почту")) {
+      let text = "Добрый день, поменять почту к которой был привязан аккаунт - Вам необходимо создать новый аккаунт указав новую почту при регистрации, затем оставить заявку в техническую поддержку на объединение двух аккаунтов указав ID обоих аккаунтов. С Уважением, техническая поддержка АИС (Молодежь России)";
+		  outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     }
     else {
