@@ -38,6 +38,7 @@
 https://disk.yandex.ru/i/DO6vf8cxB2g3RQ
 ~~~
 РАЗРАБОТЧИКИ
+------------
 
 <h4>Круглов Иван fullstack https://t.me/FosenTS </h4>
 <h4>Ким Дмитрий frontend-assistant https://t.me/HeDoTPoGa  </h4>
