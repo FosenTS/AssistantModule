@@ -106,7 +106,7 @@ function handInput() {
   let transcript = document.getElementById('LabelText').value;
   let inputArea = document.getElementById('input-area');
   let outputArea = document.getElementById('output-area');
-  if (transcript = "Привет") {
+  if (transcript == "Привет") {
     let text = "Привет, пользователь!";
     outputArea.innerHTML = text;
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
