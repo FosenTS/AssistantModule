@@ -1,3 +1,3 @@
 # VoiceAssistantModule
 Voice assistant module by SigmaDevs
-![logo](https://user-images.githubusercontent.com/76241314/219823255-5b73981d-b287-4de4-ae58-50dca9f040e5.png)
+![image](https://user-images.githubusercontent.com/76241314/219849096-07ccc322-d874-4070-9881-db975d53b332.png)
