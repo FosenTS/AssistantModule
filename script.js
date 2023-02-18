@@ -15,18 +15,6 @@ function listen() {
 	  }
       inputArea.innerHTML = event.results[0][0].transcript;
     }
-    speak();
 }
-
-let textEl = document.getElementById('output-area');
-
-function speak() {
-  window.speechSynthesis.cancel();
-
-  const text = textEl.value;
-  const utterance = new SpeechSynthesisUtterance(text);
-  window.speechSynthesis.speak(utterance);
-}
-
 
 
