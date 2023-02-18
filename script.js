@@ -1,13 +1,13 @@
 const { text } = require("express"); 
 
 function listen() {
-    document.getElementById("micro").src="src/picture/microphone_ico_on.png";
     let inputArea = document.getElementById('input-area');
     let outputArea = document.getElementById('output-area');
   
     var recognition = new webkitSpeechRecognition();
     recognition.lang = "ru_RU";
     recognition.start();
+	document.getElementById("micro").src="src/picture/microphone_ico_on.png";
 
     recognition.onresult = function(event) {
     let transcript = event.results[0][0].transcript;
@@ -112,8 +112,9 @@ function listen() {
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     }
       inputArea.innerHTML = transcript;
+	  document.getElementById("micro").src="src/picture/microphone_ico_off.png";
     }
-    document.getElementById("micro").src="src/picture/microphone_ico_off.png";
+
 }
 
 function handInput() {
