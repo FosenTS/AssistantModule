@@ -104,6 +104,7 @@ function listen() {
 	let text = "В личном кабинете ФГАИС (Молодежь России) в Грантовом модуле (grants.myrosmol.ru) в разделе Мероприятия";
 	outputArea.innerHTML = text;
 	speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
     else {
       let text = "В данный момент ассистент не способен ответить на ваш вопрос. Мы перенаправим ваш вопрос в банк вопросов, для формирования ответа";
       outputArea.innerHTML = text;
