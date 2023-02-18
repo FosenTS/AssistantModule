@@ -1,6 +1,7 @@
 const { text } = require("express"); 
 
 function listen() {
+	    document.getElementById("micro").src="src/picture/microphone_ico_on.png";
     let inputArea = document.getElementById('input-area');
     let outputArea = document.getElementById('output-area');
   
@@ -104,13 +105,13 @@ function listen() {
 	let text = "В личном кабинете ФГАИС (Молодежь России) в Грантовом модуле (grants.myrosmol.ru) в разделе Мероприятия";
 	outputArea.innerHTML = text;
 	speechSynthesis.speak(new SpeechSynthesisUtterance(text));
-    }
     else {
       let text = "В данный момент ассистент не способен ответить на ваш вопрос. Мы перенаправим ваш вопрос в банк вопросов, для формирования ответа";
       outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     }
       inputArea.innerHTML = transcript;
+	    document.getElementById("micro").src="src/picture/microphone_ico_off.png";
     }
 }
 
