@@ -20,13 +20,15 @@ function listen() {
       outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     }
-      inputArea.innerHTML = event.results[0][0].transcript;
+      inputArea.innerHTML = transcript;
     }
 }
 
 function handInput() {
-  let transcript = document.getElementById('LabelText');
-  if (transcript.includes("Привет")) {
+  let transcript = document.getElementById('LabelText').value;
+  let inputArea = document.getElementById('input-area');
+  let outputArea = document.getElementById('output-area');
+  if (transcript = "Привет") {
     let text = "Привет, пользователь!";
     outputArea.innerHTML = text;
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
@@ -36,5 +38,5 @@ function handInput() {
     outputArea.innerHTML = text;
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
   }
-    inputArea.innerHTML = event.results[0][0].transcript;
+    inputArea.innerHTML = transcript;
 }
