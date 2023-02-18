@@ -1,4 +1,4 @@
-const { text } = require("express");
+const { text } = require("express"); 
 
 function listen() {
     let inputArea = document.getElementById('input-area');
