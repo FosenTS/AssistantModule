@@ -8,8 +8,8 @@ function listen() {
   
     recognition.onresult = function(event) {
     let transcript = event.results[0][0].transcript;
-	  if (transcript.includes("hello")) {
-		  outputArea.innerHTML = "Hello, User!";
+	  if (transcript.includes("Привет")) {
+		  outputArea.innerHTML = "Привет, пользователь!";
 	  }
       inputArea.innerHTML = event.results[0][0].transcript;
     }
