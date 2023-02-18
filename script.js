@@ -99,6 +99,11 @@ function listen() {
       outputArea.innerHTML = text;
       speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     }
+
+    else if (transcript.includes("где посмотреть актуальные конкурсы") || transcript.includes("где посмотреть актуальные конкурсы?") || transcript.includes("Где посмотреть актуальные конкурсы?") || transcript.includes("Где посмотреть актуальные конкурсы")){
+	let text = "В личном кабинете ФГАИС (Молодежь России) в Грантовом модуле (grants.myrosmol.ru) в разделе Мероприятия";
+	outputArea.innerHTML = text;
+	speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     else {
       let text = "В данный момент ассистент не способен ответить на ваш вопрос. Мы перенаправим ваш вопрос в банк вопросов, для формирования ответа";
       outputArea.innerHTML = text;
@@ -201,6 +206,11 @@ function handInput() {
     outputArea.innerHTML = text;
     speechSynthesis.speak(new SpeechSynthesisUtterance(text));
   }
+    else if (transcript == ("где посмотреть актуальные конкурсы") || transcript == ("где посмотреть актуальные конкурсы?") || transcript == ("Где посмотреть актуальные конкурсы?") || transcript == ("Где посмотреть актуальные конкурсы")){
+	let text = "В личном кабинете ФГАИС (Молодежь России) в Грантовом модуле (grants.myrosmol.ru) в разделе Мероприятия";
+	outputArea.innerHTML = text;
+	speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
   else {
     let text = "В данный момент ассистент не способен ответить на ваш вопрос. Мы перенаправим ваш вопрос в банк вопросов, для формирования ответа";
     outputArea.innerHTML = text;
